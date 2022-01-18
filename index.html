@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIGITAL CLOCK</title>
+    <link rel="stylesheet" href="index.css">
+   
+</head>
+<body class="bg-body">
+    <div class="bg">
+    <div class="header">
+        <div class="head-1">
+            <img src="img/./clock_logo.png" width="200px">
+        </div>
+        <div class="head-2" >
+            <div class="up">
+            <span class="up">TIME
+            </span>
+            </div>
+
+            <div class="container">
+                <img src="./img/timeline.svg" >
+                <div class="content2">
+                            <span onload="updateTime()" id="hour" class="hour">00
+                            </span>
+                            <br>
+                        <span class="tittle1">hours</span>
+                </div>
+                        
+            </div>
+             <span  class="dot">:</span>
+            
+             <div class="container">
+                <img src="./img/timeline.svg" >
+                <div class="content2">
+                  <span onload="updateTime()" id="minutes" class="hour">00</span>
+                  <br>
+               <span class="tittle1">mins</span>
+                </div>
+               
+            </div>
+             <span  class="dot">:</span>
+            <div class="container">
+                <img src="./img/timeline.svg" >
+                <div class="content2">
+                  <span onload="updateTime()" id="seconds" class="hour">00</span>
+                    <br>
+                  <span class="tittle1">secs</span>
+                </div>
+               
+            </div>
+            <div class="container">
+                <img src="./img/AM_svg.svg" class="lastbox">
+                <div class="content2">
+                  <span onload="updateTime()" id="midd" class="midd">00</span>
+                    <br>
+                </div>
+               
+            </div>
+
+
+            
+        </div>
+        
+    </div>
+    <div class="header">
+        
+        <div class="content">
+
+
+           
+            <div class="title">
+               <p><img src="./img/wake_up.svg" class="icon" > Set wake up time</p>
+               <p>  <img src="./img/lunch_time.svg" class="icon">Set Lunch time</p> 
+               <p> <img src="./img/nap_time.svg" class="icon">Set Nap time</p> 
+            </div>
+            <div class="form" >
+                <select name="" id="setWakeTime" onchange="setImage(this);">
+                    <option value="default">select time below</option>
+                    <option value="\img\5.jpg">8AM - 9AM</option>
+                    <option value="\img\2.jpg">9AM - 10AM</option>
+                    <option value="\img\3.jpg">10AM - 11AM</option>
+                    <option value="\img\4.jpg">11AM - 12PM</option>
+                    <option value="\img\1.jpg">12PM - 1PM</option>
+                    <option value="\img\5.jpg">1PM - 2PM</option>
+                    <option value="\img\2.jpg">2PM - 3PM</option>
+                    <option value="\img\3.jpg">3PM - 4PM</option>
+                    <option value="\img\4.jpg">4PM - 5PM</option>
+                    <option value="\img\1.jpg">5PM - 6PM</option>
+                    <option value="\img\5.jpg">6PM - 7PM</option>
+                    <option value="\img\2.jpg">7PM - 8PM</option>
+                    <option value="\img\3.jpg">8PM - 9PM</option>
+                    <option value="\img\4.jpg">9PM - 10PM</option>
+                    <option value="\img\1.jpg">10PM - 11PM</option>
+                    <option value="\img\5.jpg">11PM - 12AM</option>
+                    <option value="\img\1.jpg">1AM - 2AM</option>
+                    <option value="\img\2.jpg">2PM - 3AM</option>
+                    <option value="\img\3.jpg">3PM - 4AM</option>
+                    <option value="\img\4.jpg">4PM - 5AM</option>
+                    <option value="\img\5.jpg">5PM - 6AM</option>
+                    <option value="\img\2.jpg">6PM - 7AM</option>
+                    <option value="\img\1.jpg">7PM - 8AM</option>
+
+                </select>
+                <br/>
+                
+                <p>
+
+                    <select name="" id="setLunchTime" onchange="setImage(this);">
+                        <option value="default">select time below</option>
+                    <option value="\img\6.jpg">8AM - 9AM</option>
+                    <option value="\img\7.jpg">9AM - 10AM</option>
+                    <option value="\img\8.jpg">10AM - 11AM</option>
+                    <option value="\img\9.jpg">11AM - 12PM</option>
+                    <option value="\img\10.jpg">12PM - 1PM</option>
+                    <option value="\img\11.jpg">1PM - 2PM</option>
+                    <option value="\img\10.jpg">2PM - 3PM</option>
+                    <option value="\img\9.jpg">3PM - 4PM</option>
+                    <option value="\img\8.jpg">4PM - 5PM</option>
+                    <option value="\img\7.jpg">5PM - 6PM</option>
+                    <option value="\img\6.jpg">6PM - 7PM</option>
+                    <option value="\img\8.jpg">7PM - 8PM</option>
+                    <option value="\img\9.jpg">8PM - 9PM</option>
+                    <option value="\img\11.jpg">9PM - 10PM</option>
+                    <option value="\img\10.jpg">10PM - 11PM</option>
+                    <option value="\img\6.jpg">11PM - 12AM</option>
+                    <option value="\img\8.jpg">1AM - 2AM</option>
+                    <option value="\img\7.jpg">2PM - 3AM</option>
+                    <option value="\img\9.jpg">3PM - 4AM</option>
+                    <option value="\img\10.jpg">4PM - 5AM</option>
+                    <option value="\img\11.jpg">5PM - 6AM</option>
+                    <option value="\img\6.jpg">6PM - 7AM</option>
+                    <option value="\img\8.jpg">7PM - 8AM</option>
+
+                </select>
+            </p>
+            <p>
+                <select name="setNapTime" id="setNapTime" onchange="setImage(this);">
+                    <option value="default">select time below</option>
+                    <option value="\img\12.jpg">8AM - 9AM</option>
+                    <option value="\img\13.jpg">9AM - 10AM</option>
+                    <option value="\img\14.jpg">10AM - 11AM</option>
+                    <option value="\img\16.jpg">11AM - 12PM</option>
+                    <option value="\img\15.jpg">12PM - 1PM</option>
+                    <option value="\img\14.jpg">1PM - 2PM</option>
+                    <option value="\img\13.jpg">2PM - 3PM</option>
+                    <option value="\img\12.jpg">3PM - 4PM</option>
+                    <option value="\img\15.jpg">4PM - 5PM</option>
+                    <option value="\img\16.jpg">5PM - 6PM</option>
+                    <option value="\img\13.jpg">6PM - 7PM</option>
+                    <option value="\img\12.jpg">7PM - 8PM</option>
+                    <option value="\img\14.jpg">8PM - 9PM</option>
+                    <option value="\img\15.jpg">9PM - 10PM</option>
+                    <option value="\img\16.jpg">10PM - 11PM</option>
+                    <option value="\img\12.jpg">11PM - 12AM</option>
+                    <option value="\img\15.jpg">1AM - 2AM</option>
+                    <option value="\img\12.jpg">2PM - 3AM</option>
+                    <option value="\img\14.jpg">3PM - 4AM</option>
+                    <option value="\img\16.jpg">4PM - 5AM</option>
+                    <option value="\img\13.jpg">5PM - 6AM</option>
+                    <option value="\img\14.jpg">6PM - 7AM</option>
+                    <option value="\img\15.jpg">7PM - 8AM</option>
+                </select>
+            </p>
+            <button class="greeting btn" type="" onload="updateTime()" id="greeting"></button>
+            <br>
+           <button class="btn" id="btn1" type="submit" onclick="setTimer()">Set Time</button>
+           
+          
+            </div>
+        </div>
+        
+           
+    
+        <div class="content1">
+            <!-- <button class="greeting btn btn1" type="" onload="updateTime()" id="greeting"></button> -->
+           <img  name="image-swap" class="img1" src="./img/0.jpg"/> 
+           
+        </div>
+    </div>
+    <div id="greet">
+        <h2 id="wakeupTime"></h2>
+        <h2 id="lunchTime"></h2>
+        <h2 id="napTime"></h2>
+    </div>
+    
+   
+    
+</div>
+</body>
+<script type="text/javascript" src="index.js"></script> 
+</html>
